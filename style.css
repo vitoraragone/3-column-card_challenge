@@ -29,6 +29,35 @@ body, p, h1, a {
   margin: 0 auto;
 }
 
+h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+} 
+
+p {
+  height: 150px;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+
+a {
+  display: block;
+  max-width: fit-content;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+  border-radius: 20px;
+  padding: 10px 20px; 
+}
+
+a:hover{
+  color: var(--transparent-white);
+  background: transparent;
+  transition: 0.5s;
+}
+
 
 /* ------------------- */
 
@@ -56,26 +85,20 @@ body, p, h1, a {
   justify-content: flex-start;
 }
 
-h1 {
-  display: inline-block;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-} 
-
-p {
-  height: 150px;
-  line-height: 1.6;
-  padding-bottom: 20px;
-}
-
-
 .sedans {
   background-color: var(--bright-orange);
   border-radius: 10px 0px 0px 10px;
 }
 
+.sedans a {
+  color: var(--bright-orange);
+}
+
 .suvs {
   background-color: var(--dark-cyan);
+}
+.suvs a {
+  color: var(--dark-cyan);
 }
 
 .luxury {
@@ -83,18 +106,11 @@ p {
   border-radius: 0px 10px 10px 0px ;
 }
 
-a {
-  display: block;
-  max-width: fit-content;
-  font-size: 15px;
-  font-family: 'Lexend Deca', sans-serif;
-  text-decoration: none;
-  text-align: center;
-  background-color: var(--very-light-gray);
-  border: 2px solid var(--very-light-gray);
-  border-radius: 20px;
-  padding: 10px 20px; 
+.luxury a {
+  color: var(--very-dark-cyan);
 }
+
+
 
 @media (max-width: 800px) {
   .models {
