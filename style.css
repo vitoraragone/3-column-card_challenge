@@ -114,9 +114,9 @@ a:hover{
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 910px) {
   .models {
-    grid-template-columns:350px;
+    grid-template-columns: 1fr;
   }
 
   .sedans {
